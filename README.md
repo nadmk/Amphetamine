@@ -8,6 +8,6 @@ Amphetamine: Causes Chrome and other browsers to freeze and eventually crash. Al
 Amphetamine is licensed under the wtfpl License. See the LICENSE.md for more information.
 
 ## Disclaimer
-Usage of DrugsLab+ for attacking infrastructures without prior mutual consistency can be considered as an illegal activity. 
+Usage of Amphetamine for attacking infrastructures without prior mutual consistency can be considered as an illegal activity. 
 It is the final user's responsibility to obey all applicable local, state and federal laws. 
 The author assume no liability and are not responsible for any misuse or damage caused by this program.
