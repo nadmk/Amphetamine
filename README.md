@@ -1,14 +1,11 @@
-<p align="center"><img src="https://raw.githubusercontent.com/NickTehPro/DrugsLab-/master/logo.png" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/NickTehPro/Amphetamine/master/logo.png" /></p>
 
 ## About
-DrugsLab+ is a collection of exploits and bugs found by me or friends.
-
-## List
-* Amphetamine: Causes Chrome and other browsers to freeze and eventually crash. Also bypasses the builtin popup block. Written in JS.
+Amphetamine: Causes Chrome and other browsers to freeze and eventually crash. Also bypasses the builtin popup block. Written in JS.
 
 ## License
 
-DrugsLab+ is licensed under the wtfpl License. See the LICENSE.md for more information.
+Amphetamine is licensed under the wtfpl License. See the LICENSE.md for more information.
 
 ## Disclaimer
 Usage of DrugsLab+ for attacking infrastructures without prior mutual consistency can be considered as an illegal activity. 
